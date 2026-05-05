@@ -34,7 +34,7 @@ torchrun \
         trainer.lr=5e-4 \
         trainer.n_epochs=1 \
         trainer.batch_size=64 \
-        trainer.per_gpu_max_batch_size=2 \
+        trainer.per_gpu_max_batch_size=1 \
         trainer.temp_schedule_args.exp.temp_start=3 \
         trainer.temp_schedule_args.exp.temp_end=0.3 \
         trainer.val_nsteps=1000 \
