@@ -17,7 +17,10 @@ import sys
 import os
 import torch
 import numpy as np
-import wandb
+try:
+    import wandb
+except ImportError:
+    wandb = None
 import random
 from torch.nn.parallel import DistributedDataParallel as DDP
 
